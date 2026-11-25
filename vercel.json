@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    { "source": "/", "destination": "/bingo-suma-resta", "permanent": false }
+  ],
+  "rewrites": [
+    { "source": "/bingo-suma-resta", "destination": "/index.html" },
+    { "source": "/bingo-suma-resta/:path*", "destination": "/:path*" }
+  ]
+}
