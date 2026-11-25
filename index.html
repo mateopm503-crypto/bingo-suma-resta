@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bingo Ninja · Suma y Resta · 6° Básico</title>
+<title>Bingo · Suma y Resta · 6° Básico</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Andika:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -263,7 +263,7 @@ nav button,.btn{min-height:44px}
 <canvas id="confetti"></canvas>
 
 <header>
-  <div class="logo"><svg viewBox="0 0 100 100" width="1em" height="1em" fill="#e08a4f" style="vertical-align:-.12em;margin-right:.25em"><path fill-rule="evenodd" d="M50 4 L60 40 L96 50 L60 60 L50 96 L40 60 L4 50 L40 40 Z M50 42 A8 8 0 1 0 50.01 42 Z"/></svg>BINGO NINJA <span style="font-size:.62em">de Suma y Resta</span>
+  <div class="logo"><svg viewBox="0 0 100 100" width="1em" height="1em" fill="#e08a4f" style="vertical-align:-.12em;margin-right:.25em"><path fill-rule="evenodd" d="M50 4 L60 40 L96 50 L60 60 L50 96 L40 60 L4 50 L40 40 Z M50 42 A8 8 0 1 0 50.01 42 Z"/></svg>BINGO <span style="font-size:.62em">de Suma y Resta</span>
     <small>Matemática · 6° Básico</small></div>
   <nav>
     <button data-v="vRuleta" class="on">Bombo</button>
@@ -276,7 +276,7 @@ nav button,.btn{min-height:44px}
 <section id="vRuleta" class="view on">
   <div class="stage">
     <div class="wheelBox">
-      <div class="chalk">Misión ninja: resuelvan y busquen el resultado en su cartón</div>
+      <div class="chalk">Resuelvan y busquen el resultado en su cartón</div>
       <div class="wheelWrap" id="wheelWrap">
         <canvas id="wheel" width="1000" height="1000"></canvas>
       </div>
@@ -492,7 +492,7 @@ function cardHTML(i, drawnSet){
     const n=c[col*3+r], p=byN[n];
     cells+=`<div class="cell c${p.c}${drawnSet&&drawnSet.has(n)?' hit':''}">${fmt(p.a)}</div>`;
   }
-  return `<div class="bingo"><div class="bh"><span class="t">BINGO NINJA<small>Suma y Resta · 6°</small></span><span class="n">N° ${i+1}</span></div>
+  return `<div class="bingo"><div class="bh"><span class="t">BINGO<small>Suma y Resta · 6°</small></span><span class="n">N° ${i+1}</span></div>
   <div class="heads"><div class="hA">NATURALES</div><div class="hB">DECIMALES</div><div class="hC">FRACCIONES</div></div>
   <div style="font-size:12px;margin:2px 0 4px">Nombre: ________________________</div><div class="grid">${cells}</div>
   </div>`;
@@ -638,7 +638,7 @@ function drawScene(){
   for(const s of [-1,1]){ X.beginPath(); X.moveTo(G.x+s*(G.R+28),G.y); X.lineTo(G.x+s*(G.R-30),930); X.lineTo(G.x+s*(G.R-70),930); X.lineTo(G.x+s*(G.R+4),G.y); X.closePath(); X.fill(); X.stroke(); }
   const bg='#d98b4f';
   X.fillStyle=bg; X.beginPath(); X.roundRect(90,915,820,75,26); X.fill();
-  X.fillStyle='#fff'; X.font='800 46px "Baloo 2",sans-serif'; X.textAlign='center'; X.textBaseline='middle'; X.fillText('B I N G O   N I N J A',G.x,955);
+  X.fillStyle='#fff'; X.font='800 46px "Baloo 2",sans-serif'; X.textAlign='center'; X.textBaseline='middle'; X.fillText('B I N G O',G.x,955);
   // tubo
   X.lineCap='round'; X.lineJoin='round';
   X.strokeStyle='rgba(255,255,255,.22)'; X.lineWidth=2*BR+20; X.beginPath(); PATH.forEach((p,i)=>i?X.lineTo(...p):X.moveTo(...p)); X.stroke();

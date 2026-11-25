@@ -1,4 +1,4 @@
-# Bingo Ninja de Suma y Resta · 6° Básico
+# Bingo de Suma y Resta · 6° Básico
 
 Juego de bingo para la clase de matemática: sumas y restas con números naturales, decimales y fracciones.
 
